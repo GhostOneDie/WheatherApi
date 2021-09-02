@@ -1,0 +1,12 @@
+$(document).ready(function(){
+    $.get (
+        "http://api.openweathermap.org/data/2.5/weather",
+        {
+            "id" : "713514",
+            "appid" : "b60328b260bb3b619e4e25dc1ccb314c"
+        },
+        function(data) {
+            console.log(data);
+        }
+    );
+});
